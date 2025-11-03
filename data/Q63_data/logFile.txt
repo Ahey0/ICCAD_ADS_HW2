@@ -1,0 +1,12 @@
+
+hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
+    (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
+
+
+
+TRAN Tran1[1] <MyLibrary_lib:Q63:schematic>   time=(100 us->900 us)
+
+
+Resource usage:
+  Total stopwatch time     =     0.48 seconds.
+
