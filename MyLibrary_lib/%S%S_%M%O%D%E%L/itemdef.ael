@@ -1,0 +1,5 @@
+create_item("SS_MODEL","SS_MODEL","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","SS_MODEL","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("alfa","alfa",68608,"StdFormSet",-1,prm("StdForm","0.99")),
+create_parm("ro","ro",68608,"StdFormSet",1,prm("StdForm","100k")),
+create_parm("gm","conductance",68608,"StdFormSet",2,prm("StdForm","2*e-3")),
+create_parm("Va","Early Voltages",68608,"StdFormSet",9,prm("StdForm","100k")));

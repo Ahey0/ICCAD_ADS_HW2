@@ -1,0 +1,54 @@
+; Top Design: "MyLibrary_lib:Q60:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:Q60:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: MyLibrary_lib
+; Cell Name: SS_MODEL
+; View Name: schematic
+define SS_MODEL ( B  E  C ) 
+parameters  alfa=0.99  ro=100k  gm=2*e-3  Va=100k 
+#uselib "ckt" , "VCCS"
+VCCS:SRC1  B E C E G=gm S T=0.0 nsec R1=1000 TOhm R2=1000 TOhm F=100 GHz 
+R:R1  C E R=ro Noise=yes 
+R:R2  B E R=rpi Noise=yes 
+
+beta=alfa/(1-alfa)
+
+rpi=beta/gm
+end SS_MODEL
+
+V_Source:SRC1  N__3 0 Type="V_DC" Vdc=5.0 V SaveCurrent=1 
+R:R1  N__9 0 R=4*R Noise=yes 
+R:R2  N__6 N__8 R=R Noise=yes 
+R:R3  N__3 N__8 R=7.2*R Noise=yes 
+R:R4  N__8 0 R=7.2*R Noise=yes 
+R:R5  Vin N__2 R=R Noise=yes 
+C:C1  N__2 N__6 C=1000 uF 
+C:C2  N__8 N__9 C=1000 uF 
+V_Source:SRC2  Vin 0 Type="V_AC" Vdc=0 V Vac=polar(1,0) V Freq=freq V_Noise=0 uV SaveCurrent=1 
+
+R=10k
+SS_MODEL:X1  N__6 N__9 N__3 alfa=0.99 ro=5000 kOhm gm=10/R Va=1000 kV 
+AC:AC1 CalcNoise=no SortNoise=0 IncludePortNoise=yes BandwidthForNoise=1 Hz FreqConversion=no UseFiniteDiff=no StatusLevel=2 OutputBudgetIV=no DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="AC1_stim" OutputPlan="AC1_Output" 
+
+SweepPlan: AC1_stim Start=1.0 kHz Stop=10.0 MHz Step=1.0 kHz 
+
+OutputPlan:AC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+

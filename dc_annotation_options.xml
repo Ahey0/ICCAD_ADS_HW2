@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dc_annotation_options>
+ <options ToggleVoltage="true" library="MyLibrary_lib" cell="Q64" view="schematic"/>
+ <options ToggleVoltage="false" library="MyLibrary_lib" cell="Q60" ToggleCurrent="false" view="schematic"/>
+</dc_annotation_options>

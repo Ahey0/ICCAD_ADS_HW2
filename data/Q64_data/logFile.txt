@@ -1,0 +1,43 @@
+
+hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
+    (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
+
+Warning detected by hpeesofsim in SRC4 during netlist flattening.
+    Both terminals of this source are connected to the same node.
+    This device will not be instantiated
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    Circuit converged with at least one device's P-N junction current
+            exceeding the explosion current and junction has been linearized.
+            You may want to increase the explosion current in the device model or in
+            the Options (if the parameter is not given in the model) and resimulate.
+            You may need to increase Maximum number of warnings under Output tab
+            in Options to see which devices have been linearized.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT12' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT9' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT10' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT11' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT8' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT7' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT4' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT3' explosion current exceeded.
+Warning detected by hpeesofsim during DC analysis `AC1'.
+    BJT `BJT1' explosion current exceeded.
+
+AC AC1[1] <MyLibrary_lib:Q64:schematic>   freq=(1 kHz->100 MHz)
+
+
+DC DC1[1] <MyLibrary_lib:Q64:schematic>  
+.
+DC convergence achieved in 31 iterations.
+
+Resource usage:
+  Total stopwatch time     =     1.45 seconds.
+

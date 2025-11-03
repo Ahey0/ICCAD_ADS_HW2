@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      A.hey
+HostName                       DESKTOP-6PJKOQN
+ProcessIdentifier              9428
+ProcessCreationTime_UTC        1761686003
+ProcessCreationTime_Readable   Wed Oct 29 00:43:23 2025 Iran Standard Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         E:\U\ANALOG_DESIGN\ADS_FILES\HW\HW2\MyWorkspace_wrk\MyLibrary_lib\tech.db.cdslck
+TimeEditLocked                 Wed Oct 29 01:14:50 2025 Iran Standard Time

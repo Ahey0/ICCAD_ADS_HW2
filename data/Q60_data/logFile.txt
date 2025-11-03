@@ -1,0 +1,15 @@
+
+hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
+    (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
+
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `C2' C=0.001 is unusually large.
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `C1' C=0.001 is unusually large.
+
+AC AC1[1] <MyLibrary_lib:Q60:schematic>   freq=(1 kHz->10 MHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.51 seconds.
+
