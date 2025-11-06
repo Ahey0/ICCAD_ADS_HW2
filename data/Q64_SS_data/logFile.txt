@@ -3,10 +3,9 @@ hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
     (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
 
 
-
-TRAN Tran1[1] <MyLibrary_lib:Q64:schematic>   time=(150 us->700 us)
+AC AC1[1] <MyLibrary_lib:Q64_SS:schematic>   freq=(1 kHz->10 MHz)
 
 
 Resource usage:
-  Total stopwatch time     =     0.45 seconds.
+  Total stopwatch time     =     0.55 seconds.
 

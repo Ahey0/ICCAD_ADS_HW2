@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="4" Version="100">
+<ADSWorkspace Revision="7" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <ConfigFile Name="dds.cfg" />
@@ -84,5 +84,21 @@
         <Data_Files Name="Q61_S.ds" />
         <Data_Files Name="Q61_S_data\logFile.txt" />
         <Data_Display Name="Q61.dds" />
+        <Data_Display Name="Q62.dds" />
+        <Data_Display Name="Q63.dds" />
+        <Dataset Name="Q62.ds" />
+        <Dataset Name="Q63.ds" />
+        <Data_Files Name="dc_annotation\%My%Library_lib_%Q63_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%My%Library_lib_%Q63_schematic\annotation_map.xml" />
+        <Data_Files Name="Q62.ds" />
+        <Data_Files Name="Q62_data\logFile.txt" />
+        <Data_Files Name="Q63.ds" />
+        <Data_Files Name="Q63_data\logFile.txt" />
+        <Cell Name="MyLibrary_lib:Q62" />
+        <Cell Name="MyLibrary_lib:Q63" />
+        <Cell Name="MyLibrary_lib:SS_PMOS" />
+        <Dataset Name="Q64_SS.ds" />
+        <Data_Files Name="Q64_SS.ds" />
+        <Data_Files Name="Q64_SS_data\logFile.txt" />
     </Workspace>
 </ADSWorkspace>
